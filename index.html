@@ -1,4 +1,45 @@
 <!doctype html>
-<html lang = us-eng>
+<html lang="en-us">
 
+<head>
+    <meta charset="UTF-8">
+    <title>Rupee Collector</title>
+    <link rel="stylesheet" type=text/css href="Assets/css/style.css">
+</head>
+
+<body>
+    <h1>Rupee Collector!</h1>
+
+    <div id = "main-container">
+        <p>You will be given a random number at the start of the game.</p>
+    
+        <p>There are four rupees below. By clicking on a rupee you will add a specific amount of points to your total score. </p>
+    
+        <p>You win the game by matching your total score to the random number. You lose the game if your total score goes above the random number.</p>
+    
+        <p>The value of each rupee is hidden from you until you click on it.</p>
+    
+        <p>Each time the game starts, the game will change the value of each rupee.</p>
+    </div>
+
+    <div id = "random-number"></div>
+
+    <div id = "win-loss">
+        <p>Wins: </p>
+        <p>Losses: </p>
+    </div>
+
+    <div id = "crystals">
+        <img class = "rupee" src = "Assets/Images/Blue_rupee.png">
+        <img class = "rupee" src = "Assets/Images/Green_rupee.png">
+        <img class = "rupee" src = "Assets/Images/Purple_Rubee.png">
+        <img class = "rupee" src = "Assets/Images/Red_rupee.png">
+    </div>
+
+    <div id = "chest">
+        <p>Your score is: </p>
+        <p id = "score"></p>
+    </div>
+
+</body>
 </html>
