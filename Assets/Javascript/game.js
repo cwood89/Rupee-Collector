@@ -1,3 +1,4 @@
+$(document).ready(function(){
 // global variables
 var wins = 0;
 var losses = 0;
@@ -55,3 +56,5 @@ else if (score > random) {
     $("#win").text("Wins: " + wins);
     $("#loss").text("Losses: " + losses);
 };
+
+});
