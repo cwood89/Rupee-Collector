@@ -3,24 +3,24 @@ $(document).ready(function(){
 var wins = 0;
 var losses = 0;
 var score = 0;
-var random = randNum();
+var random;
 var crystal;
 
-// DOM element selection
-$("#random-number").text(random);
-$("#win").text("Wins: " + wins);
-$("#loss").text("Losses: " + losses);
-
 function start() {
+score = 0;
+random = randNum();
+crystal = 0;
 // generate random values of crystals
 $("#blue").val(Math.floor(Math.random() * (12) + 1));
 $("#green").val(Math.floor(Math.random() * (12) + 1));
 $("#purple").val(Math.floor(Math.random() * (12) + 1));
 $("#red").val(Math.floor(Math.random() * (12) + 1));
 $("#score").text(score);
-score = 0;
-random = randNum();
-crystal = 0;
+// DOM element selection
+$("#random-number").text(random);
+$("#win").text("Wins: " + wins);
+$("#loss").text("Losses: " + losses);
+
 };
 
 // generate random number
@@ -36,6 +36,8 @@ $("button").on("click" , function() {
     crystal = parseInt(crystal);
     score += crystal;
     $("#score").text(score);
+    console.log("score: " + score)
+    console.log("random" + random)
     checkWin();
 });
 

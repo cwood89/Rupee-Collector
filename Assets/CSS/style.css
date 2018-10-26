@@ -11,7 +11,8 @@ h1 {
 }
 
 p {
-    color: rgb(63, 63, 63);
+    color: white;
+    font-size: 25px;
 
 }
 
@@ -22,6 +23,8 @@ body {
     background-attachment: fixed;
     background-size: 80%;
     background-position: center center;
+    width:100%;
+    margin: auto;
 }
 
 #main-container {
@@ -33,27 +36,20 @@ body {
     border-style: solid;
     border-width: 3px;
     border-color: gray;
+    margin-bottom: 10px;
 }
 
 #win-loss {
-    width: 80%;
+    width: 50%;
     margin: auto;
     text-align: center;
+    float: right;
 }
 
 #win-loss p {
-    display: inline-block;
     color:  #C90024;
     font-size: 3em;
     text-align: center;
-}
-
-#crystals {
-    width: 80%;
-    margin: auto;
-    border-style: solid;
-    border-width: 3px;
-    border-color: gray;
 }
 
 button {
@@ -62,20 +58,16 @@ button {
 
 }
 
-#random-number {
-    width: 80%;
-    text-align: center;
-    font-size: 4em;
-    color: #C90024;
-    margin: auto;
-}
-
 #chest {
     background-image: url(../Images/chest.jpg);
     background-repeat: no-repeat;
-    background-size: 40%;
+    background-size: 100%;
     background-position: center center;
     text-align: center;
+    float: left;
+    width: 50%;
+    height:100%;
+    margin:auto;
 }
 
 #chest p {
@@ -85,9 +77,6 @@ button {
 }
 
 #score {
-    width: 80%;
     text-align: center;
-    font-size: 4em;
     color: white;
-    margin: auto;
 }
